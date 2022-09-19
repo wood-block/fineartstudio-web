@@ -17,5 +17,5 @@ jobs:
           username: ${{ secrets.SERVER_USERNAME }}
           password: ${{ secrets.SERVER_KEY }}
           port: ${{ secrets.SERVER_PORT }}
-          source: "index.html"
+          source: "*"
           target: ${{ secrets.SERVER_PATH }}
