@@ -2,38 +2,45 @@
     background-color:rgba(255, 255, 255, 0);
     height: 600px;
     margin: 0 auto;
+    z-index: 3;
 }
-.nav_layer {
-    margin-left: 177px;
-    margin-top: 19px;
-    opacity: 1.00;
-    position: relative;
-    width: 523px;
-    z-index: 1; 
-}
-/* (아마도 주로) 상단 메뉴바에 사용하는 블럭요소들 */
+
 #left-box {
     width: 100px;
     text-align: center;
     padding : 17px;
-    background-color: red;
+    
     float: left;
 }
 #center-box {
     text-align: center;
     padding : 17px;
-    background-color: yellow;
+    
     margin: 0 auto;
 }
 #right-box {
+    
     width: 100px;
     text-align: center;
     padding : 17px;
-    background-color: blue;
+    
     float: right;
 }
-
-
+.name_box p{
+    color:whitesmoke;
+    font-size: larger;
+}
+.quote_box{
+    height: 302px;
+    left: 527px;
+    position: absolute;
+    top: 276px;
+    width: 153px;
+    z-index: 3;
+}
+.quote_box p{
+    color:darkgrey
+}
 
 #parent{
     width: 50%;
