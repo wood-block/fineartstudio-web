@@ -1,0 +1,14 @@
+.normal_body {
+    background:url(../images/PhotoGray_browser_bg-2.jpg) repeat scroll top left;
+    
+}
+
+.main_block {
+    background:url(../images/Darkroom_spotlight.jpg);
+    width: 700px;
+    
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    text-align: left;
+}
