@@ -1,17 +1,15 @@
 .normal_body {
-    background:url(../images/PhotoGray_browser_bg-2.jpg) repeat scroll top left;
+    background:url(../images/PhotoGray_browser_bg-2.jpg) repeat scroll top left;    
 }
 
 .main_block {
+    height: 947px;
     background: transparent url(../images/PhotoGray_bg_c-1.jpg) repeat scroll top left;
-    
     width: 700px;
-    
     margin: 0 auto;
     overflow: hidden;
     position: relative;
     text-align: left;
-    
 }
 
 .bg_hidden_layer {
@@ -22,24 +20,35 @@
     height: 57px;
 }
 
-.nav_layer nav {
-    margin-left: 177px;
-    margin-top: 19px;
-    opacity: 1.00;
+.widget {
+    margin-left: 327px;
+    margin-top: 20px;
     position: absolute;
-    width: 523px;
+    width: 373px;
     z-index: 3; 
     height: 37px;
 }
-.nav_list {
-    background-image: url(../images/PhotoGray_nav_bg.png);
+.widget_border {
     border-top: 1px solid #999;
     border-bottom: 1px solid #999;
-    padding: 0px;
+    background-image: url(../images/PhotoGray_nav_bg.png);
 }
-.nav_list li{
-    display: inline;
+.widget_padding {
+    padding: 6px 0px 4px 0px;
+    height: 35px;
+}
+.nav_list {
+    list-style: none;
+    margin: 0px;
     padding: 0px 10px 0px 10px;
+    text-align: center;
+}
+.nav_list li {
+    display: inline;
+    padding: 0px 15px 0px 15px;
+}
+.nav_list li a{
+    font-family: Futura, 'Trebuchet MS', sans-serif;
     margin: 0px;
     text-transform: uppercase;
     font-size: .7em;
