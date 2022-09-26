@@ -1,11 +1,11 @@
-.normal_body {
-    background:url(../images/PhotoGray_browser_bg-2.jpg) repeat scroll top left;    
+body {
+    background: url(../images/PhotoGray_browser_bg-2.jpg) repeat scroll top left;    
 }
 
 .main_block {
-    height: 947px;
+    height: 100vh;
     background: transparent url(../images/PhotoGray_bg_c-1.jpg) repeat scroll top left;
-    width: 700px;
+    max-width: 700px;
     margin: 0 auto;
     overflow: hidden;
     position: relative;
@@ -16,40 +16,32 @@
     position: absolute;
 }
 
-.nav_layer {
+.header {
     height: 57px;
 }
 
-.widget {
-    margin-left: 327px;
-    margin-top: 20px;
-    position: absolute;
-    width: 373px;
-    z-index: 3; 
-    height: 37px;
+.header__inner {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 20px;
 }
-.widget_border {
+.menu {
+    position: absolute;
+    z-index: 3;
+    /* 이거 투명하게 하는 css 코드 있음 */
+    background-image: url(../images/PhotoGray_nav_bg.png);
     border-top: 1px solid #999;
     border-bottom: 1px solid #999;
-    background-image: url(../images/PhotoGray_nav_bg.png);
 }
-.widget_padding {
-    padding: 6px 0px 4px 0px;
-    height: 35px;
+.menu__inner {
+    padding: 6px 10px 4px 10px;
 }
-.nav_list {
-    list-style: none;
-    margin: 0px;
-    padding: 0px 10px 0px 10px;
-    text-align: center;
-}
-.nav_list li {
+.menu__item {
     display: inline;
-    padding: 0px 15px 0px 15px;
 }
-.nav_list li a{
+.menu__link {
+    padding: 0px 15px 0px 15px;
     font-family: Futura, 'Trebuchet MS', sans-serif;
-    margin: 0px;
     text-transform: uppercase;
     font-size: .7em;
     color: #c1c1c1;
