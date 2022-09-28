@@ -1,5 +1,5 @@
 body {
-    background: url(../images/PhotoGray_browser_bg-2.jpg) repeat scroll top left;    
+    background: url(../images/PhotoGray_browser_bg-2.jpg) repeat scroll top left;
 }
 
 .main_block {
@@ -25,6 +25,7 @@ body {
     justify-content: flex-end;
     padding-top: 20px;
 }
+
 .menu {
     position: absolute;
     z-index: 3;
@@ -33,12 +34,15 @@ body {
     border-top: 1px solid #999;
     border-bottom: 1px solid #999;
 }
+
 .menu__inner {
     padding: 6px 10px 4px 10px;
 }
+
 .menu__item {
     display: inline;
 }
+
 .menu__link {
     padding: 0px 15px 0px 15px;
     font-family: Futura, 'Trebuchet MS', sans-serif;
