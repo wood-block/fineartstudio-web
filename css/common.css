@@ -8,12 +8,12 @@ body {
     max-width: 700px;
     margin: 0 auto;
     overflow: hidden;
-    position: relative;
     text-align: left;
 }
 
 .bg_hidden_layer {
     position: absolute;
+    z-index: 0;
 }
 
 .header {
@@ -27,7 +27,6 @@ body {
 }
 
 .menu {
-    position: absolute;
     z-index: 3;
     /* 이거 투명하게 하는 css 코드 있음 */
     background-image: url(../images/PhotoGray_nav_bg.png);
