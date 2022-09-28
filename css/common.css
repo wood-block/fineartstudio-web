@@ -18,12 +18,12 @@ body {
 
 .header {
     height: 57px;
+    padding-top: 20px;
 }
 
 .header__inner {
     display: flex;
     justify-content: flex-end;
-    padding-top: 20px;
 }
 
 .menu {
