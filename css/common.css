@@ -1,5 +1,5 @@
 body {
-    background: url(../images/PhotoGray_browser_bg-2.jpg) repeat scroll top left;    
+    background: url(../images/PhotoGray_browser_bg-2.jpg) repeat scroll top left;
 }
 
 .main_block {
@@ -8,37 +8,40 @@ body {
     max-width: 700px;
     margin: 0 auto;
     overflow: hidden;
-    position: relative;
     text-align: left;
 }
 
 .bg_hidden_layer {
     position: absolute;
+    z-index: 0;
 }
 
 .header {
     height: 57px;
+    padding-top: 20px;
 }
 
 .header__inner {
     display: flex;
     justify-content: flex-end;
-    padding-top: 20px;
 }
+
 .menu {
-    position: absolute;
     z-index: 3;
     /* 이거 투명하게 하는 css 코드 있음 */
     background-image: url(../images/PhotoGray_nav_bg.png);
     border-top: 1px solid #999;
     border-bottom: 1px solid #999;
 }
+
 .menu__inner {
     padding: 6px 10px 4px 10px;
 }
+
 .menu__item {
     display: inline;
 }
+
 .menu__link {
     padding: 0px 15px 0px 15px;
     font-family: Futura, 'Trebuchet MS', sans-serif;
