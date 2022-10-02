@@ -6,14 +6,19 @@ body {
     height: 100vh;
     background: transparent url(../images/PhotoGray_bg_c-1.jpg) repeat scroll top left;
     max-width: 700px;
+    width: 100vw;
     margin: 0 auto;
     overflow: hidden;
     text-align: left;
+    position: relative;
 }
 
 .bg_hidden_layer {
+    background: url(../images/Darkroom_spotlight.jpg) repeat scroll top left;
     position: absolute;
     z-index: 0;
+    height: 700px;
+    width: 700px;
 }
 
 .header {
