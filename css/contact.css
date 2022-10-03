@@ -7,8 +7,8 @@
     display: flex;
     justify-content: space-between;
     z-index: 3;
-    padding-right: 34px;
-    padding-left: 34px;
+    padding-right: 4.85%;
+    padding-left: 4.85%;
 }
 
 .address__map {
@@ -34,16 +34,18 @@
 .studio__title {
     position: relative;
     padding-top: 10px;
-    padding-right: 34px;
-    padding-left: 34px;
+    padding-right: 4.85%;
+    padding-left: 4.85%;
     z-index: 3;
 }
 
 .studio__gallery {
     display: flex;
     flex-wrap: wrap;
-    padding-right: 24px;
-    padding-left: 24px;
+    padding-right: 3.42%;
+    padding-left: 3.42%;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .studio__gallery>* {
@@ -51,8 +53,33 @@
     height: 285px;
     z-index: 3;
     background-color: white;
-    margin: 0 auto;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    flex: 0 0 45%;
+    margin: 5px 0.7%;
+    flex: 0 0 48%;
+}
+
+@media screen and (max-width:767px) {
+    .address {
+        display: block;
+        position: relative;
+    }
+
+    .address__map {
+        width: 100%;
+    }
+
+    .address__info {
+        padding-top: 10px;
+    }
+
+    .studio__gallery {
+        display: block;
+        position: relative;
+        padding-right: 4.85%;
+        padding-left: 4.85%;
+    }
+
+    .studio__gallery>* {
+        width: 100%;
+        margin: 10px auto;
+    }
 }
