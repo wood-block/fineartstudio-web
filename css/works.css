@@ -34,7 +34,7 @@
     z-index: 1;
 }
 
-section {
+.section {
     left: 8px;
     width: 683px;
     height: auto;
