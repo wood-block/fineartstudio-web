@@ -1,5 +1,6 @@
-.main__block {
-    display: none;
+.main_block {
+    min-height: 100vh;
+    height: 100%;
 }
 
 .banner {
