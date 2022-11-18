@@ -33,7 +33,7 @@
     -webkit-filter: drop-shadow(12px 7px 8px #000);
 }
 
-.content {
+.home-content {
     background-color: rgba(255, 255, 255, 0);
     margin: 0 auto;
     z-index: 3;
@@ -86,17 +86,8 @@
     line-height: 18.05px;
 }
 
-.footer {
-    border: 1px solid black;
-    /* align element to bottom
-    Reference
-    https://skout90.github.io/2018/08/29/CSS/element-bottom-%EC%9C%84%EC%B9%98-3%EA%B0%80%EC%A7%80-%EB%B0%A9%EB%B2%95/ */
-    position: absolute;
-    bottom: 0;
-}
-
 @media screen and (max-width:768px) {
-    .content {
+    .home-content {
         display: block;
         position: relative;
     }

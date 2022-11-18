@@ -1,0 +1,54 @@
+.main_block {
+    min-height: 100vh;
+    height: 100%;
+}
+
+.banner {
+    height: auto;
+    width: 640px;
+}
+
+.banner__inner {
+    padding-left: 30px;
+    justify-content: flex-end;
+}
+
+.banner__title {
+    font-size: 24px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    text-align: left;
+    color: rgb(255, 255, 255);
+    font-family: 'Futura-Medium', 'Futura', 'Trebuchet MS', sans-serif;
+    line-height: 32px;
+    opacity: 1.00;
+    position: relative;
+    z-index: 1;
+}
+
+.banner__script {
+    font-size: 14px;
+    color: rgb(203, 203, 203);
+    font-family: 'Futura-Medium', 'Futura', 'Trebuchet MS', sans-serif;
+    line-height: 21px;
+    position: relative;
+    z-index: 1;
+}
+
+.section {
+    left: 8px;
+    width: 683px;
+    height: auto;
+}
+
+.content {
+    width: 308px;
+    height: 238px;
+    margin-left: 30px;
+    margin-top: 30px;
+
+    background-color: white;
+    float: left;
+    position: relative;
+    z-index: 1;
+}
