@@ -10,6 +10,7 @@ jobs:
 
     env:
       CI: false
+      working-directory: ./web
 
     strategy:
       matrix:
@@ -23,8 +24,8 @@ jobs:
           node-version: ${{ matrix.node-version }}
           cache: 'yarn'
       - name: Install and Build 🔧
+        working-directory: ${{ env.working-directory }}
         run: |
-          cd web
           yarn --prefer-offline
           yarn build
       - name: Checkout 🛎️
