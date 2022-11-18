@@ -27,7 +27,7 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           cache: 'yarn'
-          cache-dependency-path: web/yarn.lock
+          working-directory: web
       - name: Install and Build 🔧
         run: |
           yarn --prefer-offline
@@ -41,5 +41,5 @@ jobs:
           username: ${{ secrets.SERVER_USERNAME }}
           password: ${{ secrets.SERVER_KEY }}
           port: ${{ secrets.SERVER_PORT }}
-          source: "dist/*"
+          source: "web/dist/*"
           target: ${{ secrets.SERVER_PATH }}
