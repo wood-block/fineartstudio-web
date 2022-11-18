@@ -10,10 +10,11 @@ on:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
-
+    defaults:
+      run:
+        working-directory: 'web'
     env:
       CI: false
-      working-directory: ./web
 
     strategy:
       matrix:
@@ -27,7 +28,6 @@ jobs:
           node-version: ${{ matrix.node-version }}
           cache: 'yarn'
       - name: Install and Build 🔧
-        working-directory: ${{ env.working-directory }}
         run: |
           yarn --prefer-offline
           yarn build
@@ -40,5 +40,5 @@ jobs:
           username: ${{ secrets.SERVER_USERNAME }}
           password: ${{ secrets.SERVER_KEY }}
           port: ${{ secrets.SERVER_PORT }}
-          source: "web/dist"
+          source: "dist"
           target: ${{ secrets.SERVER_PATH }}
