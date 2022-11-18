@@ -6,6 +6,7 @@ on:
   pull_request:
     branches:
       - "main"
+      - "develop"
 
 jobs:
   build-and-deploy:
@@ -30,6 +31,14 @@ jobs:
           cd frontend
           yarn --prefer-offline
           yarn build
+      - name: set deployment dev path
+        run: |
+          echo "PATH=${{ secrets.DEV_SERVER_PATH }}" >> $GITHUB_ENV
+        if: contains(github.head_ref, 'develop')
+      - name: set deployment prod path
+        run: |
+          echo "PATH=${{ secrets.SERVER_PATH }}" >> $GITHUB_ENV
+        if: contains(github.head_ref, 'main')
       - name: copy file via ssh
         uses: appleboy/scp-action@master
         with:
@@ -38,5 +47,5 @@ jobs:
           password: ${{ secrets.SERVER_KEY }}
           port: ${{ secrets.SERVER_PORT }}
           source: "frontend/dist/"
-          target: ${{ secrets.SERVER_PATH }}
+          target: ${{ env.PATH }}
           strip_components: 2
