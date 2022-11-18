@@ -24,9 +24,10 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           cache: 'yarn'
-          cache-dependency-path: web/yarn.lock
+          cache-dependency-path: frontend/yarn.lock
       - name: Install and Build 🔧
         run: |
+          cd frontend
           yarn --prefer-offline
           yarn build
       - name: Checkout 🛎️
@@ -38,5 +39,5 @@ jobs:
           username: ${{ secrets.SERVER_USERNAME }}
           password: ${{ secrets.SERVER_KEY }}
           port: ${{ secrets.SERVER_PORT }}
-          source: "web/dist/*"
+          source: "frontend/dist/*"
           target: ${{ secrets.SERVER_PATH }}
