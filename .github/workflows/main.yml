@@ -49,5 +49,5 @@ jobs:
           password: ${{ secrets.SERVER_KEY }}
           port: ${{ secrets.SERVER_PORT }}
           source: "frontend/dist/"
-          target: ${{ env.PATH }}
+          # target: ${{ env.PATH }}
           strip_components: 2
