@@ -31,14 +31,12 @@ jobs:
           cd frontend
           yarn --prefer-offline
           yarn build
-      - run: |
-          echo "${{ github.base_ref }}"
       - name: set deployment dev path
-        if: ${{ github.ref == 'refs/heads/develop' }}
+        if: ${{ github.base_ref == 'develop' }}
         run: |
           echo "PATH=${{ secrets.DEV_SERVER_PATH }}" >> $GITHUB_ENV
       - name: set deployment prod path
-        if: ${{ github.ref == 'refs/heads/main' }}
+        if: ${{ github.base_ref == 'main' }}
         run: |
           echo "PATH=${{ secrets.SERVER_PATH }}" >> $GITHUB_ENV
       - name: copy file via ssh
