@@ -32,7 +32,7 @@ jobs:
           yarn --prefer-offline
           yarn build
       - run: |
-          echo "${{ github.head_ref }}"
+          echo "${{ github.base_ref }}"
       - name: set deployment dev path
         if: ${{ github.ref == 'refs/heads/develop' }}
         run: |
