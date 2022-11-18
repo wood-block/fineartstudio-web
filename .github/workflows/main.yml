@@ -37,5 +37,5 @@ jobs:
           username: ${{ secrets.SERVER_USERNAME }}
           password: ${{ secrets.SERVER_KEY }}
           port: ${{ secrets.SERVER_PORT }}
-          source: "frontend/dist/*"
+          source: "frontend/dist/"
           target: ${{ secrets.SERVER_PATH }}
