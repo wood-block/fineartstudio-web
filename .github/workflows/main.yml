@@ -10,9 +10,6 @@ on:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: 'web'
     env:
       CI: false
 
@@ -27,7 +24,7 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           cache: 'yarn'
-          working-directory: web
+          cache-dependency: web/yarn.lock
       - name: Install and Build 🔧
         run: |
           yarn --prefer-offline
