@@ -6,10 +6,10 @@ export const Works = () => {
     <>
       <div className="works-banner">
         <div className="works-banner__inner">
-          <div className="works-banner__title">HANNS HOLTWIESCHE</div>
+          <h1 className="title">HANNS HOLTWIESCHE</h1>
         </div>
         <div className="works-banner__inner">
-          <div className="works-banner__script">
+          <div className="text">
             <p className="intro">
               Hier gibt es eine Übersicht des künstlerischen Schaffens von Hanns
               Holtwiesche, gegliedert in Alben zu den Bereichen Plastik,
