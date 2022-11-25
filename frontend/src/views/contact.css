@@ -32,7 +32,6 @@
 .studio {
     padding-top: 42px;
     padding-bottom: 46px;
-    font-size: 2rem;
     color: white;
 }
 
@@ -53,17 +52,5 @@
 
     .address__info {
         padding-top: 10px;
-    }
-
-    .studio__gallery {
-        display: block;
-        position: relative;
-        padding-right: 4.85%;
-        padding-left: 4.85%;
-    }
-
-    .studio__gallery>* {
-        width: 100%;
-        margin: 10px auto;
     }
 }
