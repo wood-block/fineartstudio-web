@@ -10,13 +10,7 @@
 }
 
 .banner__title {
-    font-size: 24px;
     text-align: right;
-    color: rgb(255, 255, 255);
-    font-family: 'Futura-Medium', 'Futura', 'Trebuchet MS', sans-serif;
-    line-height: 32px;
-    opacity: 1.00;
-    z-index: 1;
 }
 
 .logo {
@@ -30,18 +24,13 @@
     font-size: 1px;
     line-height: 1px;
     filter: drop-shadow(12px 7px 8px #000);
-    -webkit-filter: drop-shadow(12px 7px 8px #000);
 }
 
 .home-content {
-    background-color: rgba(255, 255, 255, 0);
+    background-color: rgb(255 255 255 / 0%);
     margin: 0 auto;
     z-index: 3;
-    padding-left: 30px;
-    padding-right: 20px;
-    padding-top: 51px;
-    padding-bottom: 100px;
-    height: auto;
+    padding: 51px 20px 100px 30px;
     display: flex;
     justify-content: space-between;
     height: fit-content;
@@ -57,31 +46,31 @@
 }
 
 .main_intro {
-    font-family: 'Futura-MediumItalic', 'Futura', 'Trebuchet MS', sans-serif;
-    color: rgb(203, 203, 203);
-    font-size: 16px;
+    font-family: var(--default-font-family);
+    color: rgb(203 203 203);
+    font-size: 1rem;
     line-height: 21px;
 }
 
 .intro {
-    font-family: 'Futura-MediumItalic', 'Futura', 'Trebuchet MS', sans-serif;
-    color: rgb(203, 203, 203);
-    font-size: 14px;
+    font-family: var(--default-font-family);
+    color: rgb(203 203 203);
+    font-size: 0.875rem;
     line-height: 21px;
 }
 
 .quote {
-    font-family: 'Futura-MediumItalic', 'Futura', 'Trebuchet MS', sans-serif;
+    font-family: var(--default-font-family);
     color: darkgrey;
-    font-size: 12px;
+    font-size: 0.75rem;
     font-style: italic;
     line-height: 19px;
 }
 
 .quoteBy {
-    font-family: 'Futura-MediumItalic', 'Futura', 'Trebuchet MS', sans-serif;
-    color: rgb(203, 203, 203);
-    font-size: 12px;
+    font-family: var(--default-font-family);
+    color: rgb(203 203 203);
+    font-size: 0.75rem;
     font-style: italic;
     line-height: 18.05px;
 }
