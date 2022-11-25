@@ -1,24 +1,10 @@
-.main_block {
-    min-height: 100vh;
-    height: 100%;
-    padding-bottom: 20px;
-}
-
 .author {
-    padding-top: 20px;
-    padding-left: 4.85%;
-    padding-right: 3.82%;
-    padding-bottom: 46px;
+    padding: 42px 30px 66px;
     color: white;
 }
 
-.author__name {
-    position: relative;
-    font-size: 2rem;
-}
-
 .author-content {
-    color: rgb(210, 210, 210);
+    color: rgb(210 210 210);
     padding-top: 20px;
     height: 100%;
     display: flex;
@@ -57,4 +43,7 @@
         padding-bottom: 10px;
     }
 
+    .author-content__side {
+        flex: 0 0 0;
+    }
 }

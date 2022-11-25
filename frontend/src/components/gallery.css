@@ -1,0 +1,28 @@
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 3.42%;
+}
+
+.gallery__item {
+    width: 336px;
+    height: 285px;
+    z-index: 3;
+    background-color: white;
+    margin: 5px 0.7%;
+    flex: 0 0 48%;
+}
+
+@media screen and (max-width:767px) {
+    .gallery {
+        display: block;
+        position: relative;
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+
+    .gallery__item {
+        width: 100%;
+        margin: 10px auto;
+    }
+}

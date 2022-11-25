@@ -4,7 +4,7 @@ const Banner = () => {
   return (
     <div className="banner">
       <div className="banner__inner">
-        <div className="banner__title">Fine art glass</div>
+        <div className="title banner__title">Fine art glass</div>
       </div>
       <div className="banner__inner">
         <div className="logo">
