@@ -12,7 +12,7 @@
     z-index: 3;
 
     /* 이거 투명하게 하는 css 코드 있음 */
-    background-image: url("images/PhotoGray_nav_bg.png");
+    background-image: url("/images/PhotoGray_nav_bg.png");
     border-top: 1px solid #999;
     border-bottom: 1px solid #999;
 }
