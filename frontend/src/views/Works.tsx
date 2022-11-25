@@ -1,3 +1,4 @@
+import { Gallery } from "../components";
 import "./works.css";
 
 export const Works = () => {
@@ -20,15 +21,8 @@ export const Works = () => {
             </p>
           </div>
         </div>
+        <Gallery />
       </div>
-      <section className="works-section">
-        <div className="works-content"></div>
-        <div className="works-content"></div>
-        <div className="works-content"></div>
-        <div className="works-content"></div>
-        <div className="works-content"></div>
-        <div className="works-content"></div>
-      </section>
     </>
   );
 };

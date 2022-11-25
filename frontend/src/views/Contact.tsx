@@ -1,3 +1,4 @@
+import { Gallery } from "../components";
 import "./contact.css";
 
 export const Contact = () => {
@@ -18,14 +19,7 @@ export const Contact = () => {
         <div className="studio__title">
           <h1>Studio</h1>
         </div>
-        <div className="studio__gallery">
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
+        <Gallery />
       </div>
     </>
   );
