@@ -1,10 +1,18 @@
 .address {
     padding-top: 42px;
+    z-index: 3;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+.address__inner {
+    padding-bottom: 20px;
+}
+
+.address__content {
+    z-index: inherit;
     display: flex;
     justify-content: space-between;
-    z-index: 3;
-    padding-right: 4.85%;
-    padding-left: 4.85%;
 }
 
 .address__map {
@@ -24,38 +32,16 @@
 .studio {
     padding-top: 42px;
     padding-bottom: 46px;
-    font-size: 2rem;
     color: white;
 }
 
-.studio__title {
-    position: relative;
-    padding-top: 10px;
-    padding-right: 4.85%;
-    padding-left: 4.85%;
-    z-index: 3;
-}
-
-.studio__gallery {
-    display: flex;
-    flex-wrap: wrap;
-    padding-right: 3.42%;
-    padding-left: 3.42%;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-.studio__gallery>* {
-    width: 336px;
-    height: 285px;
-    z-index: 3;
-    background-color: white;
-    margin: 5px 0.7%;
-    flex: 0 0 48%;
+.studio__inner {
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 @media screen and (max-width:767px) {
-    .address {
+    .address__content {
         display: block;
         position: relative;
     }
@@ -66,17 +52,5 @@
 
     .address__info {
         padding-top: 10px;
-    }
-
-    .studio__gallery {
-        display: block;
-        position: relative;
-        padding-right: 4.85%;
-        padding-left: 4.85%;
-    }
-
-    .studio__gallery>* {
-        width: 100%;
-        margin: 10px auto;
     }
 }
